@@ -2,8 +2,14 @@ function Timer(callback, delay) {
     var lastUpdate = null;
     var isRunning = false;
 
+    var requestAnimFrame = (function(){
+        return function(callback){
+                return setTimeout(callback, 1000 / 60);
+            };
+    })();
+
     var loop = function(){
-        requestAnimationFrame(function(){
+        requestAnimFrame(function(){
             var now = Date.now();
             if(!isRunning){
                 lastUpdate = now;
@@ -45,3 +51,5 @@ function Timer(callback, delay) {
 
     loop();
 }
+
+module.exports = Timer;

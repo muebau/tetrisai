@@ -17,8 +17,8 @@ Piece.fromIndex = function(index){
             break;
         case 1: // J
             piece = new Piece([
-                [0xC0C0C0, 0x000000, 0x000000],
-                [0xC0C0C0, 0xC0C0C0, 0xC0C0C0],
+                [0xFF3A00, 0x000000, 0x000000],
+                [0xFF3A00, 0xFF3A00, 0xFF3A00],
                 [0x000000, 0x000000, 0x000000]
             ]);
             break;
@@ -252,3 +252,5 @@ Piece.prototype.rotate = function(grid){
         this.column += offset.columnOffset;
     }
 };
+
+module.exports = Piece;

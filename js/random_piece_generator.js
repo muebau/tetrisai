@@ -1,3 +1,5 @@
+var Piece = require('./piece');
+
 function RandomPieceGenerator(){
     Math.seed
     this.bag = [0, 1, 2, 3, 4, 5, 6];
@@ -33,3 +35,5 @@ RandomPieceGenerator.prototype.shuffleBag = function() {
         this.bag[randomIndex] = temporaryValue;
     }
 };
+
+module.exports = RandomPieceGenerator;

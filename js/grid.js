@@ -1,3 +1,5 @@
+module.exports = Grid;
+
 function Grid(rows, columns){
     this.rows = rows;
     this.columns = columns;
