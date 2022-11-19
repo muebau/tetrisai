@@ -7,9 +7,11 @@ To run the code go to the 'js' folder and start:
 ```
 nodejs index.js
 ```
-
 ATTENTION:
 Most parameters are still hard coded to my setup of 20x15 pixels. If I find some time I might change that to a more flexible approach. Suggestions with pull request are welcome.
+
+## Demo
+![matrix showing tetris](/demo.gif "Demo video")
 
 ## License
 Copyright (C) 2017 muebau
